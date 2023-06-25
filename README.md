@@ -62,3 +62,11 @@ when building application use type and building library use interface
 # benefits of typescript 
 
 auto complete , solve compile time error instead of runtime error
+
+ # use state hook rule
+
+ always declare state variable inside component
+ declare on top only
+ never declare in condition or loop
+
+ client side routing (SPA) - no network request send
