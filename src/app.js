@@ -1,18 +1,18 @@
 import React, { lazy, Suspense, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import { Header } from './src/components/Header';
-import { Body } from './src/components/Body';
+import { Header } from './components/Header';
+import Body from './components/Body';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
-import About from './src/components/About';
-import Contact from './src/components/Contact';
-import Error from './src/components/Error';
-import RestaurantMenu from './src/components/RestaurantMenu';
-import UserContext from './src/utils/UserContext';
+import About from './components/About';
+import Contact from './components/Contact';
+import Error from './components/Error';
+import RestaurantMenu from './components/RestaurantMenu';
+import UserContext from './utils/UserContext';
 import { Provider } from 'react-redux';
-import appStore from './src/utils/appStore';
-import Cart from './src/components/Cart';
+import appStore from './utils/appStore';
+import Cart from './components/Cart';
 
-const Grocery = lazy(() => import('./src/components/Grocery'))
+const Grocery = lazy(() => import('./components/Grocery'))
 const AppLayout = () => {
     const [userName, setUserName] = useState();
 
